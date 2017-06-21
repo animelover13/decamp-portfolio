@@ -7,6 +7,10 @@ class PortfoliosController < ApplicationController
     @portfolio_item = Portfolio.new
   end  
   
+  def show
+    @portfolio_item = Portfolio.find(params[:id])
+  end
+  
   def create
     @portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body))
 
@@ -35,9 +39,7 @@ class PortfoliosController < ApplicationController
     end
   end
   
-  def show
-    @portfolio_item = Portfolio.find(params[:id])
-  end
+  
 
   def destroy
     # Perform the lookup
