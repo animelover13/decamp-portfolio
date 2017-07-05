@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/animelover13/Martinez_view_tool
+  revision: 75ad4910f79b40b7c9cedba1d2c6d441cc177105
+  specs:
+    Martinez_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -181,6 +187,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  Martinez_view_tool!
   bootstrap (~> 4.0.0.alpha6)
   byebug
   coffee-rails (~> 4.2)
