@@ -17,8 +17,16 @@
     <div class="site-wrapper">
      <div class="site-wrapper-inner">
       <div class="cover-container">
-          
-        <diV id ="background"></diV>
+      
+        <%= video_tag(
+            'giphy-downsized(1).gif',
+            id: 'background',
+            autoplay: true,
+            loop: true,
+            muted: true,
+            poster: 'home_bg.png'
+           )   
+           %>
 
        <%= render "shared/application_nav" %>
   
