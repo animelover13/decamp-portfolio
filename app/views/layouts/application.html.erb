@@ -8,6 +8,8 @@
     <%= csrf_meta_tags %>
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
+    
+    <%= favicon_link_tag 'favicons/favicon (4).ico' %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -15,29 +17,29 @@
 
   <body>
     <div class="site-wrapper">
-     <div class="site-wrapper-inner">
-      <div class="cover-container">
-      
-        <%= video_tag(
-            'giphy-downsized(1).gif',
-            id: 'background',
-            autoplay: true,
-            loop: true,
-            muted: true,
-            poster: 'home_bg.png'
-           )   
-           %>
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
 
-       <%= render "shared/application_nav" %>
-  
-       <%= yield %>
-       
-       <%= render "shared/application_footer" %>
-       
-       <%= alerts %>
-      
-       </div>
-     </div>
+          <%= video_tag(
+              'HardDrivePhotojpeg.mp4',
+              id: 'background',
+              autoplay: true,
+              loop: true,
+              muted: true,
+              poster: 'home_bg.png'
+            )
+            %>
+
+          <%= render "shared/application_nav" %>
+
+          <%= yield %>
+
+          <%= render "shared/application_footer" %>
+
+          <%= alerts %>
+
+        </div>
+      </div>
     </div>
   </body>
 </html>
